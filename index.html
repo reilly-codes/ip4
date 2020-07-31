@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <div class="hero-section">
+    <div class="hero-section" style="height: 100vh;">
         <div class="identity">
             <h1>feased pizza shop</h1>
             <h5>stay home</h5>
@@ -21,25 +21,25 @@
             <button class="ordernow" id="order">order now</button>
         </div>
     </div>
-    <div class="order">
+    <div class="order-section">
         <!--making order part-->
         <div class="pizza-size">
             <span>pizza size</span>
             <div class="row">
                 <div class="col-md-3">
-                    <input type="radio" name="size" id="small">
+                    <input type="radio" name="size" id="small" value="small">
                     <label for="small">small</label>
                 </div>
                 <div class="col-md-3">
-                    <input type="radio" name="size" id="medium">
+                    <input type="radio" name="size" id="medium" value="medium">
                     <label for="medium">medium</label>
                 </div>
                 <div class="col-md-3">
-                    <input type="radio" name="size" id="large">
+                    <input type="radio" name="size" id="large" value="large">
                     <label for="large">large</label>
                 </div>
                 <div class="col-md-3">
-                    <input type="radio" name="size" id="extraLarge">
+                    <input type="radio" name="size" id="extraLarge" value="extraLarge">
                     <label for="extraLarge">extra-large</label>
                 </div>
             </div>
@@ -48,7 +48,7 @@
             <span>Crust Type</span>
             <div class="row">
                 <div class="col-md-3">
-                    <input type="radio" name="crust" id="normal">
+                    <input type="radio" name="crust" id="normal" checked>
                     <label for="normal">normal</label>
                 </div>
                 <div class="col-md-3">
@@ -70,57 +70,57 @@
             <div class="row">
                 <div class="col-md-3 top">
                     <div>
-                        <input type="checkbox" name="bacon" id="bacon">
+                        <input type="checkbox" name="toppings[]" id="bacon" value="bacon">
                         <label for="bacon">Bacon</label>
                     </div>
                     <div>
-                        <input type="checkbox" name="ham" id="ham">
+                        <input type="checkbox" name="toppings[]" id="ham" value="ham">
                         <label for="ham">Ham</label>
                     </div>
                     <div>
-                        <input type="checkbox" name="sausage" id="sausage">
+                        <input type="checkbox" name="toppings[]" id="sausage" value="sausage">
                         <label for="sausage">Sausage</label>
                     </div>
                 </div>
                 <div class="col-md-3 top">
                     <div>
-                        <input type="checkbox" name="pepperoni" id="pepperoni">
+                        <input type="checkbox" name="toppings[]" id="pepperoni" value="pepperoni">
                         <label for="pepperoni">pepperoni</label>
                     </div>
                     <div>
-                        <input type="checkbox" name="chicken" id="chicken">
+                        <input type="checkbox" name="toppings[]" id="chicken" value="chicken">
                         <label for="chicken">Grilled Chicken</label>
                     </div>
                     <div>
-                        <input type="checkbox" name="beef" id="beef">
+                        <input type="checkbox" name="toppings[]" id="beef" value="beef">
                         <label for="beef">Corned Beef</label>
                     </div>
                 </div>
                 <div class="col-md-3 top">
                     <div>
-                        <input type="checkbox" name="pepper" id="pepper">
+                        <input type="checkbox" name="toppings[]" id="pepper" value="pepper">
                         <label for="pepper">Green Pepper</label>
                     </div>
                     <div>
-                        <input type="checkbox" name="onion" id="onion">
+                        <input type="checkbox" name="toppings[]" id="onion" value="onion">
                         <label for="onion">Onions</label>
                     </div>
                     <div>
-                        <input type="checkbox" name="mushroom" id="mushroom">
+                        <input type="checkbox" name="toppings[]" id="mushroom" value="mushroom">
                         <label for="mushroom">mushroom</label>
                     </div>
                 </div>
                 <div class="col-md-3 top">
                     <div>
-                        <input type="checkbox" name="pineapple" id="pineapple">
+                        <input type="checkbox" name="toppings[]" id="pineapple" value="pineapple">
                         <label for="pineapple">Pineapples</label>
                     </div>
                     <div>
-                        <input type="checkbox" name="olives" id="olives">
+                        <input type="checkbox" name="toppings[]" id="olives" value="olives">
                         <label for="olives">Olives</label>
                     </div>
                     <div>
-                        <input type="checkbox" name="tomato" id="tomato">
+                        <input type="checkbox" name="toppings[]" id="tomato" value="tomato">
                         <label for="tomato">Tomatoes</label>
                     </div>
                 </div>
@@ -154,6 +154,7 @@
         <button class="checkout" id="checkout">Checkout</button>
     </div>
     <script src="./node_modules/jQuery/tmp/jquery.js"></script>
+    <script src="./js/script.js"></script>
     <script src="./js/app.js"></script>
 </body>
 
