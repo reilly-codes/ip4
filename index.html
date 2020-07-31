@@ -5,12 +5,154 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pizza Shop</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap-grid.css">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&family=Ropa+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-
+    <div class="hero-section">
+        <div class="identity">
+            <h1>feased pizza shop</h1>
+            <h5>stay home</h5>
+            <h5>stay safe</h5>
+        </div>
+        <div class="call-act">
+            <button class="ordernow" id="order">order now</button>
+        </div>
+    </div>
+    <div class="order">
+        <!--making order part-->
+        <div class="pizza-size">
+            <span>pizza size</span>
+            <div class="row">
+                <div class="col-md-3">
+                    <input type="radio" name="size" id="small">
+                    <label for="small">small</label>
+                </div>
+                <div class="col-md-3">
+                    <input type="radio" name="size" id="medium">
+                    <label for="medium">medium</label>
+                </div>
+                <div class="col-md-3">
+                    <input type="radio" name="size" id="large">
+                    <label for="large">large</label>
+                </div>
+                <div class="col-md-3">
+                    <input type="radio" name="size" id="extraLarge">
+                    <label for="extraLarge">extra-large</label>
+                </div>
+            </div>
+        </div>
+        <div class="crust">
+            <span>Crust Type</span>
+            <div class="row">
+                <div class="col-md-3">
+                    <input type="radio" name="crust" id="normal">
+                    <label for="normal">normal</label>
+                </div>
+                <div class="col-md-3">
+                    <input type="radio" name="crust" id="crispy">
+                    <label for="crispy">crispy</label>
+                </div>
+                <div class="col-md-3">
+                    <input type="radio" name="crust" id="stuffed">
+                    <label for="stuffed">stuffed</label>
+                </div>
+                <div class="col-md-3">
+                    <input type="radio" name="crust" id="gluttenFree">
+                    <label for="gluttenFree">glutten free</label>
+                </div>
+            </div>
+        </div>
+        <div class="toppings">
+            <span>Toppings</span>
+            <div class="row">
+                <div class="col-md-3 top">
+                    <div>
+                        <input type="checkbox" name="bacon" id="bacon">
+                        <label for="bacon">Bacon</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="ham" id="ham">
+                        <label for="ham">Ham</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="sausage" id="sausage">
+                        <label for="sausage">Sausage</label>
+                    </div>
+                </div>
+                <div class="col-md-3 top">
+                    <div>
+                        <input type="checkbox" name="pepperoni" id="pepperoni">
+                        <label for="pepperoni">pepperoni</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="chicken" id="chicken">
+                        <label for="chicken">Grilled Chicken</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="beef" id="beef">
+                        <label for="beef">Corned Beef</label>
+                    </div>
+                </div>
+                <div class="col-md-3 top">
+                    <div>
+                        <input type="checkbox" name="pepper" id="pepper">
+                        <label for="pepper">Green Pepper</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="onion" id="onion">
+                        <label for="onion">Onions</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="mushroom" id="mushroom">
+                        <label for="mushroom">mushroom</label>
+                    </div>
+                </div>
+                <div class="col-md-3 top">
+                    <div>
+                        <input type="checkbox" name="pineapple" id="pineapple">
+                        <label for="pineapple">Pineapples</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="olives" id="olives">
+                        <label for="olives">Olives</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="tomato" id="tomato">
+                        <label for="tomato">Tomatoes</label>
+                    </div>
+                </div>
+            </div>
+            <div class="qty">
+                <span>Quantity</span>
+                <div>
+                    <input type="number" name="qty" id="qty">
+                </div>
+            </div>
+            <div class="add">
+                <button class="add" id="addOrder">add order</button>
+            </div>
+        </div>
+    </div>
+    <div class="delivery">
+        <!--delivery or no delivery-->
+        <span>Delivery</span>
+        <div>
+            <p>click if you want delivery services</p>
+            <input type="checkbox" name="deliver" id="deliver">
+        </div>
+    </div>
+    <div class="summary">
+        <!--order summary with totals-->
+        <!--order with dropdown with details and cost breakdown-->
+        <!--this div is updated using js depending on user input-->
+    </div>
+    <div class="checkout">
+        <!--payment is on delivery-->
+        <button class="checkout" id="checkout">Checkout</button>
+    </div>
     <script src="./node_modules/jQuery/tmp/jquery.js"></script>
     <script src="./js/app.js"></script>
 </body>
