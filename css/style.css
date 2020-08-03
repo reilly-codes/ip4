@@ -1,0 +1,220 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+body .hero-section {
+  height: 100vh;
+  background: url(../assets/HERO-BG.svg);
+  background-size: cover;
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
+body .hero-section .identity {
+  position: absolute;
+  margin-top: 15vh;
+  margin-left: 3%;
+}
+
+body .hero-section .identity h1 {
+  color: #fff;
+  font-size: 3.5rem;
+  font-family: "Ropa Sans", sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 5vh;
+}
+
+body .hero-section .identity h5 {
+  color: #fff;
+  font-size: 2rem;
+  font-family: "Quicksand", sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+body .hero-section .call-act {
+  position: absolute;
+  right: 0;
+  margin-right: 12%;
+  margin-top: 15vh;
+}
+
+body .hero-section .call-act button {
+  padding: 10px 15px;
+  background: #eb1111b0;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  font-family: "Quicksand", sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+body .order-section {
+  padding: 10vh 8%;
+}
+
+body .order-section .pizza-size {
+  margin-bottom: 3vh;
+}
+
+body .order-section .pizza-size span {
+  font-size: 1.5rem;
+  font-family: "Quicksand", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+body .order-section .pizza-size label {
+  font-size: 1rem;
+  font-family: "Quicksand", sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+body .order-section .crust {
+  margin-bottom: 3vh;
+}
+
+body .order-section .crust span {
+  font-size: 1.5rem;
+  font-family: "Quicksand", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+body .order-section .crust label {
+  font-size: 1rem;
+  font-family: "Quicksand", sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+body .order-section .toppings {
+  margin-bottom: 3vh;
+}
+
+body .order-section .toppings span {
+  font-size: 1.5rem;
+  font-family: "Quicksand", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+body .order-section .toppings input[type=checkbox] {
+  margin-bottom: 2vh;
+}
+
+body .order-section .toppings label {
+  font-size: 1rem;
+  font-family: "Quicksand", sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+body .order-section .qty span {
+  font-size: 1.5rem;
+  font-family: "Quicksand", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+body .order-section .qty input[type=number] {
+  padding: 5px 10px;
+  font-family: sans-serif;
+  margin: 2vh;
+}
+
+body .order-section .qty input[type=number]:focus {
+  background: rgba(0, 0, 0, 0.288);
+  color: #fff;
+}
+
+body .order-section .add {
+  text-align: center;
+}
+
+body .order-section .add button {
+  padding: 10px 15px;
+  background: #eb1111b0;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  font-family: "Quicksand", sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+body .delivery {
+  padding: 0 8% 5vh 8%;
+}
+
+body .delivery span {
+  font-size: 1.5rem;
+  font-family: "Quicksand", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+body .delivery p {
+  font-family: "Quicksand", sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+body .delivery input[type=checkbox] {
+  margin: 0 2%;
+}
+
+body .summary {
+  padding: 0 8% 6vh 8%;
+  font-family: "Quicksand", sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+body .summary span {
+  font-size: 1.5rem;
+  font-family: "Quicksand", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+body .checkout {
+  padding: 0 8% 5vh 8%;
+  text-align: center;
+}
+
+body .checkout .checkoutbtn {
+  padding: 10px 15px;
+  background: #fff;
+  outline: none;
+  border: solid;
+  border-width: 2px;
+  border-radius: 3px;
+  font-size: 1.2rem;
+  font-family: "Quicksand", sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+body .checkout .checkoutbtn:hover {
+  background: #000000b9;
+  color: #fff;
+}
+/*# sourceMappingURL=style.css.map */

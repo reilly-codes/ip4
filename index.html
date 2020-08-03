@@ -8,11 +8,10 @@
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap-grid.css">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&family=Ropa+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 </head>
 
 <body>
-    <div class="hero-section" style="height: 100vh;">
+    <div class="hero-section">
         <div class="identity">
             <h1>feased pizza shop</h1>
             <h5>stay home</h5>
@@ -126,6 +125,7 @@
                     </div>
                 </div>
             </div>
+        </div>    
             <div class="qty">
                 <span>Quantity</span>
                 <div>
@@ -135,17 +135,18 @@
             <div class="add">
                 <button class="add" id="addOrder">add order</button>
             </div>
-        </div>
     </div>
     <div class="delivery">
         <!--delivery or no delivery-->
         <span>Delivery</span>
         <div>
-            <p>click if you want delivery services</p>
-            <input type="checkbox" name="deliver" id="deliver">
+            <p>click if you want delivery services
+                <input type="checkbox" name="deliver" id="deliver">
+            </p>
         </div>
     </div>
     <div class="summary" id="summary">
+        <span>Order Summary</span>
         <!--order summary with totals-->
         <!--order with dropdown with details and cost breakdown-->
         <!--this div is updated using js depending on user input-->
@@ -158,9 +159,8 @@
     </div>
     <div class="checkout">
         <!--payment is on delivery-->
-        <button class="checkout" id="checkout">Checkout</button>
+        <button class="checkoutbtn" id="checkout">Checkout</button>
     </div>
-    <script src="./js/script.js"></script>
     <script src="./js/app.js"></script>
 </body>
 

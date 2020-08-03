@@ -198,7 +198,12 @@ function delivery() {
         // alert("Hello World!");
         var location = prompt('Enter your Location');
         if(location != ""){
-            alert("Your pizza will be delivered to " + location + " in 30 mins");
+            //alert("Your pizza will be delivered to " + location + " in 30 mins");
+            var deliverSummary = document.createElement("div");
+            deliverSummary.setAttribute("class", "deliver");
+            deliverSummary.appendChild(document.createTextNode("Your order will be delivered to " + location + " in 30 mins"));
+            var fika = document.querySelector(".delivery");
+            fika.appendChild(deliverSummary);
         }
         else{
             alert("enetr valid location");
