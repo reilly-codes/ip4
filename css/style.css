@@ -193,6 +193,24 @@ body .summary span {
   font-weight: 500;
 }
 
+body .summary .row {
+  margin-bottom: 2vh;
+}
+
+body .summary .removebtn {
+  padding: 5px;
+  font-family: "Quicksand", sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 1.1rem;
+  background: #eb1111b0;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
 body .checkout {
   padding: 0 8% 5vh 8%;
   text-align: center;

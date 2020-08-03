@@ -36,7 +36,8 @@ var toppings = 0;
 var quantity = 1;
 var quantified = 0;
 var totalAmt = 0;
-var toBePaid = 0;
+//var toBePaid = 0;
+var selectedToppings = [];
 
 //function for size
 function getSize(){    
@@ -78,7 +79,7 @@ function getCrust(){
 //function for toppings
 function getToppings(){
   var alltoppings = document.getElementsByName('toppings[]');
-  var selectedToppings = [].filter.call(alltoppings, function(c) {
+  selectedToppings = [].filter.call(alltoppings, function(c) {
     return c.checked;
   }).map((c) => c.value);
   //console.log(selectedToppings);
@@ -115,10 +116,7 @@ function multiplier() {
 }
 
 function reset(){
-    var sizeReset = document.getElementsByName("size");
-    for (i = 0; i <= sizeReset; ++i){
-        sizeReset[i].checked =false;
-    }
+    document.getElementById('order-form').reset();
 }
 
 //update the made order section
@@ -132,16 +130,30 @@ function updateList(){
     let colThree = document.createElement('div');
     colThree.setAttribute("class","col-md-3");   
     let colFour = document.createElement('div');
-    colThree.setAttribute("class","col-md-3");
+    colFour.setAttribute("class","col-md-1");
+    let colFive = document.createElement('div');
+    colFive.setAttribute("class","col-md-1");
+    let colSix = document.createElement('div');
+    colSix.setAttribute("class","col-md-1");
     
-    rowDiv.appendChild(colFour);
+    rowDiv.appendChild(colSix);
+    rowDiv.insertBefore(colFive, colSix);
+    rowDiv.insertBefore(colFour, colFive);
     rowDiv.insertBefore(colThree, colFour);
     rowDiv.insertBefore(colTwo, colThree);
     rowDiv.insertBefore(colOne, colTwo);
-    //colOne.appendChild(document.createTextNode(size));
-    //colTwo.appendChild(document.createTextNode(crust));
-    colThree.appendChild(document.createTextNode(toppings));
+    
+    //remove button
+    let removeBtn =document.createElement("button");
+    removeBtn.setAttribute("class", "removebtn")
+    removeBtn.appendChild(document.createTextNode("Remove"));
+    removeBtn.addEventListener("click", function removeItem() {
+        rowDiv.remove();
+    });
+    
     colFour.appendChild(document.createTextNode(quantity));
+    colFive.appendChild(document.createTextNode(quantified));
+    colSix.appendChild(removeBtn);
     document.querySelector("#summary").appendChild(rowDiv);
 
     //output size and price
@@ -173,8 +185,7 @@ function updateList(){
     }
 
     //selected toppings
-    
-
+    colThree.appendChild(document.createTextNode(selectedToppings.join(', ')));
 
     //total amount
 }

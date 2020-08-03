@@ -23,109 +23,110 @@
     </div>
     <div class="order-section" id="orderSect">
         <!--making order part-->
-        <div class="pizza-size">
-            <span>pizza size</span>
-            <div class="row">
-                <div class="col-md-3">
-                    <input type="radio" name="size" id="small" value="small">
-                    <label for="small">small</label>
-                </div>
-                <div class="col-md-3">
-                    <input type="radio" name="size" id="medium" value="medium">
-                    <label for="medium">medium</label>
-                </div>
-                <div class="col-md-3">
-                    <input type="radio" name="size" id="large" value="large">
-                    <label for="large">large</label>
-                </div>
-                <div class="col-md-3">
-                    <input type="radio" name="size" id="extraLarge" value="extraLarge">
-                    <label for="extraLarge">extra-large</label>
-                </div>
-            </div>
-        </div>
-        <div class="crust">
-            <span>Crust Type</span>
-            <div class="row">
-                <div class="col-md-3">
-                    <input type="radio" name="crust" id="normal" checked>
-                    <label for="normal">normal</label>
-                </div>
-                <div class="col-md-3">
-                    <input type="radio" name="crust" id="crispy">
-                    <label for="crispy">crispy</label>
-                </div>
-                <div class="col-md-3">
-                    <input type="radio" name="crust" id="stuffed">
-                    <label for="stuffed">stuffed</label>
-                </div>
-                <div class="col-md-3">
-                    <input type="radio" name="crust" id="gluttenFree">
-                    <label for="gluttenFree">glutten free</label>
-                </div>
-            </div>
-        </div>
-        <div class="toppings">
-            <span>Toppings</span>
-            <div class="row">
-                <div class="col-md-3 top">
-                    <div>
-                        <input type="checkbox" name="toppings[]" id="bacon" value="bacon">
-                        <label for="bacon">Bacon</label>
+        <form id="order-form">
+            <div class="pizza-size">
+                <span>pizza size</span>
+                <div class="row">
+                    <div class="col-md-3">
+                        <input type="radio" name="size" id="small" value="small">
+                        <label for="small">small</label>
                     </div>
-                    <div>
-                        <input type="checkbox" name="toppings[]" id="ham" value="ham">
-                        <label for="ham">Ham</label>
+                    <div class="col-md-3">
+                        <input type="radio" name="size" id="medium" value="medium">
+                        <label for="medium">medium</label>
                     </div>
-                    <div>
-                        <input type="checkbox" name="toppings[]" id="sausage" value="sausage">
-                        <label for="sausage">Sausage</label>
+                    <div class="col-md-3">
+                        <input type="radio" name="size" id="large" value="large">
+                        <label for="large">large</label>
                     </div>
-                </div>
-                <div class="col-md-3 top">
-                    <div>
-                        <input type="checkbox" name="toppings[]" id="pepperoni" value="pepperoni">
-                        <label for="pepperoni">pepperoni</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" name="toppings[]" id="chicken" value="chicken">
-                        <label for="chicken">Grilled Chicken</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" name="toppings[]" id="beef" value="beef">
-                        <label for="beef">Corned Beef</label>
-                    </div>
-                </div>
-                <div class="col-md-3 top">
-                    <div>
-                        <input type="checkbox" name="toppings[]" id="pepper" value="pepper">
-                        <label for="pepper">Green Pepper</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" name="toppings[]" id="onion" value="onion">
-                        <label for="onion">Onions</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" name="toppings[]" id="mushroom" value="mushroom">
-                        <label for="mushroom">mushroom</label>
-                    </div>
-                </div>
-                <div class="col-md-3 top">
-                    <div>
-                        <input type="checkbox" name="toppings[]" id="pineapple" value="pineapple">
-                        <label for="pineapple">Pineapples</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" name="toppings[]" id="olives" value="olives">
-                        <label for="olives">Olives</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" name="toppings[]" id="tomato" value="tomato">
-                        <label for="tomato">Tomatoes</label>
+                    <div class="col-md-3">
+                        <input type="radio" name="size" id="extraLarge" value="extraLarge">
+                        <label for="extraLarge">extra-large</label>
                     </div>
                 </div>
             </div>
-        </div>    
+            <div class="crust">
+                <span>Crust Type</span>
+                <div class="row">
+                    <div class="col-md-3">
+                        <input type="radio" name="crust" id="normal" checked>
+                        <label for="normal">normal</label>
+                    </div>
+                    <div class="col-md-3">
+                        <input type="radio" name="crust" id="crispy">
+                        <label for="crispy">crispy</label>
+                    </div>
+                    <div class="col-md-3">
+                        <input type="radio" name="crust" id="stuffed">
+                        <label for="stuffed">stuffed</label>
+                    </div>
+                    <div class="col-md-3">
+                        <input type="radio" name="crust" id="gluttenFree">
+                        <label for="gluttenFree">glutten free</label>
+                    </div>
+                </div>
+            </div>
+            <div class="toppings">
+                <span>Toppings</span>
+                <div class="row">
+                    <div class="col-md-3 top">
+                        <div>
+                            <input type="checkbox" name="toppings[]" id="bacon" value="bacon">
+                            <label for="bacon">Bacon</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="toppings[]" id="ham" value="ham">
+                            <label for="ham">Ham</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="toppings[]" id="sausage" value="sausage">
+                            <label for="sausage">Sausage</label>
+                        </div>
+                    </div>
+                    <div class="col-md-3 top">
+                        <div>
+                            <input type="checkbox" name="toppings[]" id="pepperoni" value="pepperoni">
+                            <label for="pepperoni">pepperoni</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="toppings[]" id="chicken" value="chicken">
+                            <label for="chicken">Grilled Chicken</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="toppings[]" id="beef" value="beef">
+                            <label for="beef">Corned Beef</label>
+                        </div>
+                    </div>
+                    <div class="col-md-3 top">
+                        <div>
+                            <input type="checkbox" name="toppings[]" id="pepper" value="pepper">
+                            <label for="pepper">Green Pepper</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="toppings[]" id="onion" value="onion">
+                            <label for="onion">Onions</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="toppings[]" id="mushroom" value="mushroom">
+                            <label for="mushroom">mushroom</label>
+                        </div>
+                    </div>
+                    <div class="col-md-3 top">
+                        <div>
+                            <input type="checkbox" name="toppings[]" id="pineapple" value="pineapple">
+                            <label for="pineapple">Pineapples</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="toppings[]" id="olives" value="olives">
+                            <label for="olives">Olives</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="toppings[]" id="tomato" value="tomato">
+                            <label for="tomato">Tomatoes</label>
+                        </div>
+                    </div>
+                </div>
+            </div>    
             <div class="qty">
                 <span>Quantity</span>
                 <div>
@@ -133,8 +134,9 @@
                 </div>
             </div>
             <div class="add">
-                <button class="add" id="addOrder">add order</button>
+                <button class="add" id="addOrder" type="button">add order</button>
             </div>
+            </form>
     </div>
     <div class="delivery">
         <!--delivery or no delivery-->
@@ -154,7 +156,8 @@
             <div class="col-md-3">Size</div>
             <div class="col-md-3">Crust Type</div>
             <div class="col-md-3">Toppings</div>
-            <div class="col-md-3">Quantity</div>
+            <div class="col-md-1">Quantity</div>
+            <div class="col-md-1">Total</div>
         </div> 
     </div>
     <div class="checkout">
