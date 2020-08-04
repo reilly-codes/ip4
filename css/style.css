@@ -179,6 +179,42 @@ body .delivery input[type=checkbox] {
   margin: 0 2%;
 }
 
+body .delivery .hidden {
+  text-align: center;
+}
+
+body .delivery .hidden input[type=text] {
+  padding: 10px 15px;
+  font-family: sans-serif;
+  background: transparent;
+  text-align: center;
+  border: solid;
+  border-width: 1px;
+  margin: 0 auto;
+  display: none;
+}
+
+body .delivery .hidden input[type=text]::-webkit-input-placeholder {
+  color: #000;
+}
+
+body .delivery .hidden input[type=text]:-ms-input-placeholder {
+  color: #000;
+}
+
+body .delivery .hidden input[type=text]::-ms-input-placeholder {
+  color: #000;
+}
+
+body .delivery .hidden input[type=text]::placeholder {
+  color: #000;
+}
+
+body .delivery .hidden input[type=text]:focus {
+  background: rgba(0, 0, 0, 0.288);
+  color: #fff;
+}
+
 body .summary {
   padding: 0 8% 6vh 8%;
   font-family: "Quicksand", sans-serif;

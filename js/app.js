@@ -207,7 +207,8 @@ function delivery() {
     var deliver = document.getElementById("deliver");
     if(deliver.checked == true){
         // alert("Hello World!");
-        var location = prompt('Enter your Location');
+        document.getElementById("location").style.display = "block";
+        var location = document.getElementById("location").value;
         if(location != ""){
             //alert("Your pizza will be delivered to " + location + " in 30 mins");
             var deliverSummary = document.createElement("div");
@@ -224,6 +225,7 @@ function delivery() {
         alert("Pickup order in 30 minutes");
     }
 }
+
 
 document.getElementById("checkout").addEventListener("click", function checkout(){
     delivery();
